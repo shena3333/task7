@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="./icon3.jpg">
+    <script defer src="https://unpkg.com/vue@next"></script>
+    <script defer src="https://cdn.jsdelivr.net/npm/axios@0.12.0/dist/axios.min.js"></script>
+    <script defer src="script.js"></script>
+    <title></title>
+</head>
+
+<body id="body">
+    <div id="example">
+        <p class="text">Список дел на 2024</p>
+        <input v-model="watchInput" />
+        <div class="button">
+            <button class='but' v-on:click='getAnswer'>Получить данные в консоль</button>
+            <button class='but' v-on:click='addTodo'>Добавить места к посещению</button>
+            <button class='but' v-on:click='deleteItem'>Удалить из-за лучших идей</button>
+            <button class='but' v-on:click='sortList'>Отсортировать</button>
+        </div>
+        <ol class="text">
+            <todo-item-new-test v-for="item in groceryList" v-bind:todo="item"></todo-item-new-test>
+        </ol>
+    </div>
+</body>
+
+</html>

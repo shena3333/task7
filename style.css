@@ -1,0 +1,22 @@
+#body{
+    background-image: url(./main.jpg);
+    background-size: 100% auto
+}
+.text{
+    font-size: 24px;
+    font-weight: 800;
+    color: white;
+}
+.but {
+    height: 35px;
+    width: 220px;
+    border-radius: 10px;
+    border: 0px;
+
+}
+.button{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 10px;
+}
+
